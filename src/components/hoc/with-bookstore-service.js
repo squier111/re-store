@@ -3,7 +3,6 @@ import {BookstoreServiceConsumer} from '../bookstore-service-context';
 
 const WithBookstoreService = () => (Wrapped) => {
 
-
   return (props) => {
       return (
         <BookstoreServiceConsumer>
