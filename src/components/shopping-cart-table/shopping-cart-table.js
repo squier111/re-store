@@ -7,29 +7,33 @@ const ShoppingCartTable = () => {
         <h2>Your Order</h2>
         <table className="table">
           <thead>
-            <th>#</th>
-            <th>Item</th>
-            <th>Count</th>
-            <th>Price</th>
-            <th>Action</th>
+            <tr>
+              <th>#</th>
+              <th>Item</th>
+              <th>Count</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
           </thead>
 
           <tbody>
-            <td>#</td>
-            <td>Site Reliability Engineering</td>
-            <td>2</td>
-            <td>$40</td>
-            <td>
-              <button className="btn btn-outline-danger">
-                <i className="fa fa-trash-o"></i>
-              </button>
-              <button className="btn btn-outline-success">
-                <i className="fa fa-plus-circle"></i>
-              </button>
-              <button className="btn btn-outline-warning">
-                <i className="fa fa-minus-circle"></i>
-              </button>
-            </td>
+            <tr>
+              <td>#</td>
+              <td>Site Reliability Engineering</td>
+              <td>2</td>
+              <td>$40</td>
+              <td>
+                <button className="btn btn-outline-danger">
+                  <i className="fa fa-trash-o"></i>
+                </button>
+                <button className="btn btn-outline-success">
+                  <i className="fa fa-plus-circle"></i>
+                </button>
+                <button className="btn btn-outline-warning">
+                  <i className="fa fa-minus-circle"></i>
+                </button>
+              </td>
+            </tr>
           </tbody>
         </table>
 
