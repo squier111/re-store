@@ -1,23 +1,12 @@
 import React from 'react';
-import BookList from '../book-list'
+import BookList from '../book-list';
+import ShoppingCartTable from '../shopping-cart-table';
 
-const HomePage =() => {
-
-  const books = [
-    { id:1 ,
-      title: 'Production-Ready',
-      author: 'Susan Flower'
-     },
-     { id:2 ,
-      title: 'Kill `am all',
-      author: 'd .Mustaine'
-     }
-  ];
-  
+const HomePage =() => {  
   return (
     <>
-      <div>Home Page</div>
-      <BookList books={books}/>
+      <BookList/>
+      <ShoppingCartTable/>
     </>
   )
 }
