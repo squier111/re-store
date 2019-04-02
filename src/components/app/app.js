@@ -5,7 +5,7 @@ import {HomePage , CardPage} from '../pages';
 import {Route, Switch} from 'react-router-dom';
 
 const App =(props) => {
-  return <div>
+  return <div className="wrapper">
             <ShopHeader numItems={5} total={210}/>
             <main role="main" className="container">
               <Switch>
