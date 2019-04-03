@@ -27,11 +27,27 @@ const bookAddedToCart = (bookId) => {
   };
 };
 
+const bookDeleteFromCart = (cartId) => {
+  return {
+    type: 'BOOK_DELETE_FROM_CART',
+    payload: cartId,
+  };
+};
+
+const booksDecreaseCart = (cartId) => {
+  return {
+    type: 'BOOK_DECREASE_CART',
+    payload: cartId,
+  };
+};
+
+
 
 export {
   booksLoaded,
   booksRequest,
   booksError,
-  bookAddedToCart
-  
+  bookAddedToCart,
+  bookDeleteFromCart,
+  booksDecreaseCart
 };
